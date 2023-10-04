@@ -1,0 +1,37 @@
+.module-section{
+    margin-top: 100px;
+}
+.profile-header-button{
+    margin-left: 720px;
+}
+.list-group-item a{
+    text-decoration: none;
+    color:black;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: red;
+}
+.list-group-item p{
+    font-size: 12px;
+    color: gray;
+}
+.profile-heading-icon{
+    font-size: 25px;
+}
+.breadcrumb{
+    margin-top: 20px;
+    font-size: 17px;
+}
+.green-border-left {
+    border-left: 4px solid #099f72;
+    padding-left: 10px;
+}
+.custom-success-btn {
+    background-color: white; 
+    color: #099f72 !important;
+    border: none;
+}
+.wd-button{
+    margin-left: 50px;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grades Screen</title>
+    <link href="../kanbas_navigation/kanbas-navigation-sidebar.css" rel="stylesheet">
+    <link href="../account-navigation-sidebar/account-navigation-sidebar.css" rel="stylesheet" />
+    <link href="../../vendors/bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
+    <link href="home.css" rel="stylesheet" />
+    <link href="assignments.css" rel="stylesheet"/>
+    <link href="grades.css" rel="stylesheet"/>
+</head>
+
+<body>
+    
+     
+    <div class="container-fluid row">
+        <!-- <div class="row no-gutters"> -->
+            <div class="row">
+
+
+                <div class="col-3 col-sm-2 d-none d-md-block col-lg-1 no-padding">
+                    <div class="kanbas-sidebar">
+                        <img class="northeastern-logo" src="/images/NEULogo.png" />
+                        <ul class="wd-kanbas-navigation">
+                            <li><a href="../account-navigation-sidebar/account-navigation-sidebar.html">
+                                    <i class="fas fa-user-circle"></i><br />
+                                    <span>Account</span>
+                                </a></li>
+                            <li><a href="../dashboard/dashboard.html">
+                                    <i class="fas fa-tachometer-alt"></i><br />
+                                    <span>Dashboard</span>
+                                </a></li>
+                            <li class="wd-active"><a href="../home/home.html">
+                                    <i class="fas fa-book"></i><br />
+                                    <span>Courses</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="far fa-calendar-alt"></i><br />
+                                    <span>Calendar</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fas fa-inbox"></i><br />
+                                    <span>Inbox</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="far fa-clock"></i><br />
+                                    <span>History</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fas fa-desktop"></i><br />
+                                    <span>Studio</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fas fa-comments"></i><br />
+                                    <span>Commons</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="far fa-question-circle"></i><br />
+                                    <span>Help</span>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-9 col-sm-10 col-md-10 col-lg-11 no-padding">
+                    <div class="row">
+                        <div class="profile-header">
+                            <span class="profile-heading-icon">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">CS3200.MERGED.202340</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                                </ol>
+                            </nav>
+
+                        </div>
+
+                        <hr>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 d-none d-md-block">
+                            <div class="account-navigation-sidebar">
+                                <ul class="wd-course-navigation">
+                                    <li><a href="../home/home.html">Home</a></li>
+                                    <li><a href="#">Modules</a></li>
+                                    <li><a href="#">Piazza</a></li>
+                                    <li><a href="#">Zoom Meetings</a></li>
+                                    <li><a href="../assignments/index.html">Assignments</a></li>
+                                    <li><a href="#">Quizzes</a></li>
+                                    <li class="wd-active"><a href="../grades/grades.html">Grades</a></li>
+                                    <li><a href="#">People</a></li>
+                                    <li><a href="#">Panopto Video</a></li>
+                                    <li>
+                                        <a href="#" class="d-inline">Discussions</a>
+                                        <i class="fas fa-eye-slash d-inline"></i>
+                                    </li>
+                                    <li><a href="#" class="d-inline">Announcements</a>
+                                        <i class="fas fa-eye-slash d-inline"></i></li>
+                                    <li><a href="#" class="d-inline">Pages</a>
+                                        <i class="fas fa-eye-slash d-inline"></i></li>
+                                    <li><a href="#" class="d-inline">Files</a>
+                                        <i class="fas fa-eye-slash d-inline"></i></li>
+                                    <li><a href="#" class="d-inline">Rubrics</a>
+                                        <i class="fas fa-eye-slash d-inline"></i></li>
+                                    <li><a href="#" class="d-inline">Outcomes</a>
+                                        <i class="fas fa-eye-slash d-inline"></i></li>
+                                    <li><a href="#" class="d-inline">Collaborations</a></li>
+                                    <li><a href="#" class="d-inline">Syllabus</a></li>
+                                    <li><a href="../settings/course-details.html">Settings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                            <div class="row">
+                                <div class="button-section">
+                                    <div class="wd-title">
+                                     
+                                        <div class="d-flex float-end wd-button">
+                                            
+                                            <button type="button" class="btn btn-light mx-2">
+                                                <i class="fas fa-file-import"></i>
+                                                Import
+                                            </button>
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-file-export"></i>
+                                                  Export
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                  <a class="dropdown-item" href="#">Action</a>
+                                                  <a class="dropdown-item" href="#">Another action</a>
+                                                  <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                              </div>
+                                            <button type="button" class="btn btn-light ms-2">
+                                                <i class="fas fa-bars"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <label class="form-check-label" style="font-weight: bold;">Student Names</label>
+                                        </div>
+                                        <div class="col" style="margin-left: 400px;">
+                                            <label class="form-check-label" style="font-weight: bold;">Assignment Names</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="col">
+                                                <div class="input-group">
+                                                
+                                                    <select class="form-select">
+                                                        <option selected>Search Students</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                          
+                                            <div class="col">
+                                                <div class="input-group">
+                                                
+                                                    <select class="form-select">
+                                                        <option selected>Search Assignments</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <button type="button" class="btn btn-light mx-2">
+                                        <i class="fas fa-filter"></i>
+                                        Apply Filters
+                                    </button>
+                                </div>
+                            </div>
+                           
+                            <div class="row">
+                                <div class="grade-table-section table-wrapper-scroll-y my-custom-scrollbar">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center"  style="width: 20%;">Student Name</th>
+                                                    <th class="text-center">A1 SETUP <br>OUT OF 100</th>
+                                                    <th class="text-center">A2 HTML <br>OUT OF 100</th>
+                                                    <th class="text-center">A3 CSS <br>OUT OF 100</th>
+                                                    <th class="text-center">A4 BOOTSTRAP <br> OUT OF 100</th>
+                                                    <th class="text-center">A5 REACT<br>OUT OF 100</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="student-name" style="color:red;">Doxa Asibey</td>
+                                                    <td>100%</td>
+                                                    <td><input type="text" value="99%" class="form-control"></td>
+                                                    <td>97%</td>
+                                                    <td>99%</td>
+                                                    <td>97%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="student-name">Thuy Tien Bui</td>
+                                                    <td>100%</td>
+                                                    <td>100%</td>
+                                                    <td><input type="text" value="98%" class="form-control"></td>
+                                                    <td>97%</td>
+                                                    <td>99%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="student-name" style="color:red;">Kartikey Dwidedi</td>
+                                                    <td><input type="text" value="100%" class="form-control"></td>
+                                                    <td>94%</td>
+                                                    <td>100%</td>
+                                                    <td>99%</td>
+                                                    <td>86%</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="student-name">Akanksha Kulkarni</td>
+                                                    <td>100%</td>
+                                                    <td>99%</td>
+                                                    <td>100%</td>
+                                                    <td>98%</td>
+                                                    <td><input type="text" value="96%" class="form-control"></td>
+                                         
+                                                </tr>
+                                                <tr>
+                                                    <td class="student-name"  style="color:red;">Lana Do</td>
+                                                    <td><input type="text" value="96%" class="form-control"></td>
+                                                    <td>100%</td>
+                                                    <td>99%</td>
+                                                    <td>100%</td>
+                                                    <td>99%</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="student-name"  style="color:red;">Lana Do</td>
+                                                    <td><input type="text" value="96%" class="form-control"></td>
+                                                    <td>100%</td>
+                                                    <td>99%</td>
+                                                    <td>100%</td>
+                                                    <td>99%</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="student-name"  style="color:red;">Lana Do</td>
+                                                    <td><input type="text" value="96%" class="form-control"></td>
+                                                    <td>100%</td>
+                                                    <td>99%</td>
+                                                    <td>100%</td>
+                                                    <td>99%</td>
+                                                    
+                                                </tr>
+
+                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+
+                           
+                        </div>
+
+                    </div>
+                </div>
+
+
+           </div> 
+
+        <!-- </div>  -->
+
+
+    </div>
+
+</body>
+
+
+</html>

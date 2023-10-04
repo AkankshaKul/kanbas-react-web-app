@@ -1,0 +1,31 @@
+.profile-screen{
+    margin-top : 70px;
+}
+.profile-screen .profile-icon{
+    font-size : 150px;
+}
+.profile-screen .profile-section-name{
+    font-size: 32px;
+}
+.profile-screen .profile-section-contact{
+    font-size: 25px;
+}
+.profile-screen .profile-section-links{
+    font-size: 25px;
+}
+.profile-screen .profile-section-biography{
+    font-size: 25px;
+}
+.edit-profile-button{
+    display: inline-block;
+    margin-left : 400px;
+    position: relative; 
+    top: -70px; 
+    font-size: 150px;
+}
+.profile-icon{
+    display: inline-block;
+}
+.profile-header{
+    padding-top : 20px;
+}

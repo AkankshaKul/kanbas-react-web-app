@@ -1,0 +1,17 @@
+ul.wd-acc-nav {
+    list-style: none;
+}
+.wd-acc-nav a{
+ text-decoration: none;
+ color:red;
+}
+.wd-acc-nav i{
+    color:red;
+}
+.acc-navbar{
+    margin-left:0px;
+    padding-left: 0px;
+}
+.menu-button i{
+    color:white;
+}

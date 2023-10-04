@@ -1,0 +1,76 @@
+.wd-course-navigation{
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 190px;
+    margin: 0px;
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 0px;
+    overflow-wrap: break-word;
+}
+.wd-course-navigation li{
+    padding-left: 10px ;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    justify-content: left;
+}
+.wd-course-navigation li.wd-active{
+    border-left: 1px solid black;
+}
+.wd-course-navigation li.wd-active a{
+    color : black;
+}
+.wd-course-navigation a{
+   color : red;
+   text-decoration: none;
+   display: flex;
+   word-wrap: break-word; 
+}
+.entire-container{
+    display: flex;
+    margin-left: 0px;
+    padding: 0px;
+}
+.sidebar-container{
+    display: flex;
+    margin-left: 10px;
+}
+.sidebar-separator {
+    border-top: 1px solid darkgrey; 
+    margin-top: 80px;
+    margin-bottom: 10px; 
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 140px; 
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding-top : 20px;
+}
+.profile-heading-icon {
+    margin-right: 10px; 
+    color : red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+
+}
+.profile-name{
+    font-size: 25px;
+}
+.row.no-gutters{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.col-md-2.no-padding, .col-md-3.no-padding{
+    padding: 0px;
+}
+/* .account-navigation-sidebar{
+    position:absolute;
+}
+ */

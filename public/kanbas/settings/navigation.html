@@ -4,211 +4,555 @@
 <head>
     <meta charset="UTF-8">
     <title>Settings Navigation Tab</title>
+    <link href="../kanbas_navigation/kanbas-navigation-sidebar.css" rel="stylesheet">
+    <link href="../account-navigation-sidebar/account-navigation-sidebar.css" rel="stylesheet" />
+    <link href="../../vendors/bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
+    <!-- <link href="../home/home.css" rel="stylesheet" /> -->
+    <link href="../assignments/assignments.css" rel="stylesheet"/>
+    <link href="../grades/grades.css" rel="stylesheet"/>
+    <link href="course-details.css" rel="stylesheet"/>
+    <link href="navigation.css" rel="stylesheet"/>
 </head>
 
 <body>
 
-    <table width="100%">
-
-        <tbody>
-            <tr valign="baseline">
-                <!--  First Column -->
-                <td>
-                    <ul>
-                        <li><a href="../account-navigation-sidebar.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-
-                <!-- Second Column -->
-                <td>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="assignments/index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="../grades.html">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="../course-navigation-sidebar.html">Settings</a></li>
-                    </ul>
-                </td>
-
-                <!-- Third Column -->
-                <td>
-                    <a href="course-details.html">
-                        <button type="button">Course Details</button>
-                    </a>
-                    <a href="#">
-                        <button type="button">Sections</button>
-                    </a>
-                    <a href="navigation.html">
-                        <button type="button">Navigation</button>
-                    </a>
-                    <a href="#">
-                        <button type="button">Apps</button>
-                    </a>
-                    <a href="#">
-                        <button type="button">Feature Options</button>
-                    </a>
-                    <a href="#">
-                        <button type="button">Integrations</button>
-                    </a>
-
-                    <hr>
-
-                    <p>Drag and drop items to reorder them in the course navigation.</p>
-
-                    <table border="1" width="100%">
-                        <thead>
-                            <tr>
-                                <td>Home</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Modules</td>
-                            </tr>
-                            <tr>
-                                <td>Piazza</td>
-                            </tr>
-                            <tr>
-                                <td>Zoom Meetings</td>
-                            </tr>
-                            <tr>
-                                <td>Assignments</td>
-                            </tr>
-                            <tr>
-                                <td>Quizzes</td>
-                            </tr>
-                            <tr>
-                                <td>Grades</td>
-                            </tr>
-                            <tr>
-                                <td>People</td>
-                            </tr>
-                            <tr>
-                                <td>Panopto Video</td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <div class="container-fluid row">
+        <!-- <div class="row no-gutters"> -->
+            <div class="row">
 
 
-                    <p>Drag items here to hide them from students.</p>
-                    <p>Disabling most pages will cause students who visit those pages to be redirected to the course home page.</p>
+                <div class="col-3 col-sm-2 d-none d-md-block col-lg-1 no-padding">
+                    <div class="kanbas-sidebar d-none d-md-block">
+                        <img class="northeastern-logo" src="/images/NEULogo.png" />
+                        <ul class="wd-kanbas-navigation">
+                            <li><a href="../account-navigation-sidebar/account-navigation-sidebar.html">
+                                    <i class="fas fa-user-circle"></i><br />
+                                    <span>Account</span>
+                                </a></li>
+                            <li><a href="../dashboard/dashboard.html">
+                                    <i class="fas fa-tachometer-alt"></i><br />
+                                    <span>Dashboard</span>
+                                </a></li>
+                            <li class="wd-active"><a href="../home/home.html">
+                                    <i class="fas fa-book"></i><br />
+                                    <span>Courses</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="far fa-calendar-alt"></i><br />
+                                    <span>Calendar</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fas fa-inbox"></i><br />
+                                    <span>Inbox</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="far fa-clock"></i><br />
+                                    <span>History</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fas fa-desktop"></i><br />
+                                    <span>Studio</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fas fa-comments"></i><br />
+                                    <span>Commons</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="far fa-question-circle"></i><br />
+                                    <span>Help</span>
+                                </a></li>
+                        </ul>
+                    </div>
 
-                    <table border="1" width="100%">
-                        <tbody>
-                            <tr>
-                                <td>Chat <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>SCORM <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Attendance <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Barnes and Noble Bookstore <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Digication <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Top Hat <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Syllabus <br/>
-                                Page disabled, will redirect to course home page
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Perusall <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Microsoft Teams Meetings <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>FACT Reporting and Photo Roster <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Progress Reports (Navigate) <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Microsoft Teams for Canvas <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>VHL Central <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Gradescope 1.3 <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Credentials <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>iClicker <br/>
-                                Page disabled,won't appear in navigation
-                                </td>
-                            </tr>
+                </div>
 
-                        </tbody>
-                    </table> <br/>
-                    
-                    <button type="button">Save</button>
+                <div class="col-9 col-sm-10 col-md-10 col-lg-11 no-padding">
+                    <div class="row">
+                        <div class="profile-header">
+                            <span class="profile-heading-icon">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">CS3200.MERGED.202340</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                                </ol>
+                            </nav>
 
-                </td>
-            </tr>
+                        </div>
+
+                        <hr>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2  col-md-2 col-lg-2">
+                            <div class="account-navigation-sidebar  d-none d-md-block">
+                                <ul class="wd-course-navigation">
+                                    <li><a href="../home/home.html">Home</a></li>
+                                    <li><a href="#">Modules</a></li>
+                                    <li><a href="#">Piazza</a></li>
+                                    <li><a href="#">Zoom Meetings</a></li>
+                                    <li><a href="../assignments/index.html">Assignments</a></li>
+                                    <li><a href="#">Quizzes</a></li>
+                                    <li><a href="../grades/grades.html">Grades</a></li>
+                                    <li><a href="#">People</a></li>
+                                    <li><a href="#">Panopto Video</a></li>
+                                    <li><a href="#">Discussions</a></li>
+                                    <li><a href="#">Announcements</a></li>
+                                    <li><a href="#">Pages</a></li>
+                                    <li><a href="#">Files</a></li>
+                                    <li><a href="#">Rubrics</a></li>
+                                    <li><a href="#">Outcomes</a></li>
+                                    <li><a href="#">Collaborations</a></li>
+                                    <li><a href="#">Syllabus</a></li>
+                                    <li class="wd-active"><a href="../settings/course-details.html">Settings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-8 col-sm-12 col-md-10 col-lg-8">
+                            <div class="row">
+                                <div class="tabs-section">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="course-details.html">Course Details</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Section</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="navigation.html">Navigation</a>
+                                        </li>
+                                       
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Apps</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Feature Options</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Integrations</a>
+                                        </li>
+                                     </ul>
+                                </div>
+                               
+                                
+                                <div class="navigation-subtitle mt-4 mb-2">
+                                    <p>Drag and drop items to reorder them in the course navigation.</p>
+                                </div>
+                                
+                                <div class="col-7 navigation-main-content">
+                                    
+                                
+                                        <div class="navigation-section-1">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <a href="#">Home</a>
+                                                </li> 
+                                                <li class="list-group-item">
+                                                    <a href="#">Modules</a>
+                                                    
+                                                    <div class="float-end">
+                                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#">Piazza</a>
+                                                    
+                                                    <div class="float-end">
+                                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#"> Zoom Meetings</a>
+                                                   
+                                                    <div class="float-end">
+                                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#">Assignments</a>
+                                                    
+                                                    <div class="float-end">
+                                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#">Quizzes</a>
+                                                    
+                                                    <div class="float-end">
+                                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#">Grades</a>
+                                                    
+                                                    <div class="float-end">
+                                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#">People</a>
+                                                    
+                                                    <div class="float-end">
+                                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                    </div>
+                                                </li><li class="list-group-item">
+                                                    <a href="#">Panopto Video</a>
+                                                    
+                                                    <div class="float-end">
+                                                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                    </div>
+                                                </li>
+        
+                                            </ul>
+        
+                                        </div>
+        
+                                        <br>
+                                        <p>Drag items here to hide them from students.</p>
+                                        <p style="font-size: 14px;">Disabling most pages will cause students who visit those pages to be redirected to the course home page.
+                                        </p>
+
+                                        <div class="navigation-section-2">
+                                            <ul class="list-group">
+                                                
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Chat</a>
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">SCORM</a>
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Attendance</a>
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Barnes and Noble Bookstore</a>
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Digication</a>
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Top Hat</a>
+                                                           
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Syllabus</a>
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, will direct to course home page
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Perusall</a>
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Microsoft Team Meetings</a>
+                                                           
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">FACT Reporting and Photo Roster</a>
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Progress Reports (Navigate)</a>
+                                                           
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Microsoft Teams for Canvas</a>
+                                                           
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">VHL Central</a>
+                                                           
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Gradescope 1.3</a>
+                                                           
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">Credentials</a>
+                                                           
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <a href="#">iClicker</a>
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="col-auto">
+                                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p style="font-style: italic; margin-left: 20px; margin-bottom: 0; color:black;">
+                                                               Page disabled, won't appear in navigation
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                
+                                            </ul>
+                                        </div>
+
+                                        <button type="button" class="btn btn-danger mt-2">Save</button>
+                                 
+                                </div>
+                               
+                            
+                               </div>
+
+                            </div>
+                           
+                            
+                           
+                        </div>
+
+                    </div>
+                </div>
 
 
-        </tbody>
+           </div> 
 
-    </table>
+      
+
+
+    </div>
+    
+                 
 </body>
 
 

@@ -1,0 +1,14 @@
+.tabs-section .nav-link{
+    color: red;
+}
+.course-details-title{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.wd-course-checkbox{
+    color: gray;
+}
+.hyper-link a{
+    color: red;
+    text-decoration: none;
+}

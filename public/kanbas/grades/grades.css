@@ -1,0 +1,65 @@
+.breadcrumb a{
+    text-decoration: none;
+    color: red;
+}
+.table-bordered {
+    border: 1px solid #ddd; 
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd; 
+} 
+.table thead {
+    background-color: #f2f2f2; 
+}
+
+.student-name {
+    color: red; 
+}
+.table-wrapper-scroll-y {
+    display: block;
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+   
+}
+
+/* Optional: Customize the scrollbar */
+.my-custom-scrollbar {
+    position: relative;
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow: auto;
+}
+.my-custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+.my-custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+.my-custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+.my-custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Optional: Customize the scrollbar */
+.table-responsive::-webkit-scrollbar {
+    width: 5px;
+}
+.table-responsive::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+.kanbas-sidebar{
+    padding : 0px;
+}
