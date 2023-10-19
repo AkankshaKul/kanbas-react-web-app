@@ -1,0 +1,30 @@
+.body {
+  margin-top: 50px;
+}
+
+.import-export-button {
+  margin-left: 800px;
+}
+
+.custom-table {
+  border: 1px solid gray;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid gray;
+}
+
+.white-row {
+  background-color: white;
+}
+
+.gray-row {
+  background-color: lightgray;
+  /* You can adjust the shade of gray */
+}
+
+
+.red-text {
+  color: red;
+}

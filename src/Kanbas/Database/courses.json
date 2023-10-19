@@ -1,0 +1,13 @@
+[
+    { "_id": "CS5610",
+      "name": "Foundations of AI", "number": "11550", "startDate": "2023-09-08",
+      "endDate": "2023-12-15"
+    },
+    { "_id": "CS3200",
+      "name": "Database Design", "number": "202340", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    },
+    { "_id": "CS5800",
+      "name": "Scalable Distributed Systems", "number": "202330", "startDate": "2023-09-10", "endDate": "2023-12-15"
+    }
+  ]
+  

@@ -1,0 +1,26 @@
+.wd-course-navigation a{
+    border:  none;
+    color: red;
+}
+
+.wd-course-navigation a.active {
+    color: black;
+    background-color: white;
+}
+/* .list-group-item.course-name.active {
+    border-left: 2px solid black;
+  }
+   */
+  .list-group-item.active {
+    position: relative;
+  }
+  
+  .list-group-item.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px; 
+    height: 100%;
+    background-color: black;
+  }

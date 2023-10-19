@@ -1,0 +1,12 @@
+.button-section{
+    margin-top : 50px;
+}
+
+.module-list{
+    margin-top : 20px;
+}
+
+
+.button-section, .module-list {
+  display: block;
+}

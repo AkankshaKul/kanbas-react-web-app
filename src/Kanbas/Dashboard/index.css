@@ -1,0 +1,18 @@
+
+.card-section-line p{
+    color : gray;
+}
+
+.card{
+    margin-top : 30px;
+    width:300px;
+    height: 100 px;
+}
+
+.card-body.Link{
+    text-decoration: none;
+}
+
+.no-underline {
+    text-decoration: none; 
+  }

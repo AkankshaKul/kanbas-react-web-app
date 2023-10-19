@@ -1,0 +1,17 @@
+.button-space{
+    width : 350px;
+    margin-bottom: 10px;
+}
+
+.status-section{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.to-do-section a{
+    color:red;
+    text-decoration: none;
+}
+.to-do-section p{
+    color:gray;
+}
