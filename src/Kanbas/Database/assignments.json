@@ -1,5 +1,5 @@
 [
-    { "_id": "A101", "title": "A1- ENV + HTML", "course": "CS5610", "due":"Sep 18 at 11:59pm", "points":"100"},
+    { "_id": "A101", "description": "Assignment 1 will deal with HTML & ENV."  ,"title": "A1- ENV + HTML", "course": "CS5610", "due":"Sep 18 at 11:59pm", "points":"100"},
     { "_id": "A102", "title": "A2 - CSS + BOOTSTRAP", "course": "CS5610", "due":"Oct 2 at 11:59pm", "points":"100" },
     { "_id": "A103", "title": "A3 - JS + REACT", "course": "CS5610", "due":"Oct 16 at 11:59pm", "points":"100" },
     { "_id": "A201", "title": "A4 - STATE + REDUX", "course": "CS5610","due":"Oct 30 at 11:59pm", "points":"100" },

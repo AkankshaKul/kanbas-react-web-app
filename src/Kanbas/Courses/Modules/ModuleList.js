@@ -1,12 +1,23 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
- 
+
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
+
+
   const [openModule, setOpenModule] = useState(null);
   const [openLesson, setOpenLesson] = useState(null);
 
@@ -30,16 +41,66 @@ function ModuleList() {
 
 
     <div className="mod" style={{ width: '700px' }} >
-  
+
+      <ul className="list-group">
+
+
+        <li className="list-group-item">
+          <div className="row">
+            <div className="col-9">
+              <input
+                value={module.name}
+                onChange={(e) =>
+                  dispatch(setModule({ ...module, name: e.target.value }))
+                }
+                className="form-control"
+              />
+            </div>
+            <div className="col-3">
+            <button   onClick={() => dispatch(updateModule(module))} className="btn btn-primary">
+                Update
+        </button>
+
+              <button
+                onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+                className="btn btn-success"
+              >
+                Add
+              </button>
+              
+            </div>
+          </div>
+          <div className="col-9 mt-3">
+            <textarea
+              value={module.description}
+              onChange={(e) =>
+                dispatch(setModule({ ...module, description: e.target.value }))
+              }
+              className="form-control"
+            />
+          </div>
+        </li>
+
+
+
         {modules
           .filter((module) => module.course === courseId)
           .map((module, moduleIndex) => (
             <li key={moduleIndex} className="list-group-item module">
               <button
-                className={`dropdown-button ${openModule === moduleIndex ? "open" : ""}`} style={{ width: '700px' , textAlign: 'left'}}
+                className={`dropdown-button ${openModule === moduleIndex ? "open" : ""}`} style={{ width: '650px', textAlign: 'left' }}
                 onClick={() => handleModuleClick(moduleIndex)}
               >
-            
+                 <button
+              onClick={() => dispatch(setModule(module))} className="btn btn-success float-end">
+              Edit
+            </button>
+
+                <button
+                  onClick={() => dispatch(deleteModule(module._id))} className="btn btn-danger float-end">
+                  Delete
+                </button>
+
                 <h3>{module.name}</h3>
               </button>
               {openModule === moduleIndex && (
@@ -53,7 +114,7 @@ function ModuleList() {
                             className={`dropdown-button ${openLesson === lessonIndex ? "open" : ""}`}
                             onClick={() => handleLessonClick(lessonIndex)}
                           >
-                    
+
                             <h4>{lesson.name}</h4>
                           </button>
                           {openLesson === lessonIndex && (
@@ -69,9 +130,9 @@ function ModuleList() {
               )}
             </li>
           ))}
-      {/* </ul> */}
+      </ul>
     </div>
-   
+
   );
 }
 export default ModuleList;
