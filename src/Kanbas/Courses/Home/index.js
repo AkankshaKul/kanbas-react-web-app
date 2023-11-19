@@ -24,22 +24,22 @@ function Home() {
           <button type="button" className="btn btn-light button-space">
             <LiaFileImportSolid/>
             Import Existing Content</button><br />
-          <button type="button" class="btn btn-light button-space">
+          <button type="button" className="btn btn-light button-space">
             <FaCreativeCommonsRemix/>
             Import From Commons</button><br />
-          <button type="button" class="btn btn-light button-space">
+          <button type="button" className="btn btn-light button-space">
             <RxHome/>
             Choose Home Page</button><br />
-          <button type="button" class="btn btn-light button-space">
+          <button type="button" className="btn btn-light button-space">
             <ImStatsBars/>
              View Course Stream</button><br />
-          <button type="button" class="btn btn-light button-space">
+          <button type="button" className="btn btn-light button-space">
             <HiOutlineSpeakerphone/>
             New Announcement</button><br />
-          <button type="button" class="btn btn-light button-space">
+          <button type="button" className="btn btn-light button-space">
             <ImStatsBars/>
             New Analytics</button><br />
-          <button type="button" class="btn btn-light button-space">
+          <button type="button" className="btn btn-light button-space">
             <MdOutlineNotificationImportant/>
             View Course Notifications</button><br />
         </div>
